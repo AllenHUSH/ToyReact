@@ -8,9 +8,17 @@ class Com extends Component {
 
 const com = (
   <Com class="hi">
-    <div>Hello,I am Allen.</div>
+    <div>
+      <div>Hello,I am Allen.</div>
+      <div>Hello,I am Allen.</div>
+      <div>Hello,I am Allen.</div>
+      <div>Hello,I am Allen.</div>
+      <div>Hello,I am Allen.</div>
+      <div>Hello,I am Allen.</div>
+      <div>Hello,I am Allen.</div>
+    </div>
     <div>This is a toy framework like React.</div>
   </Com>
 );
 
-ToyReact.render(com, document.body);
+ToyReact.render(com, document.getElementById('app'));

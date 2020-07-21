@@ -2,6 +2,18 @@ module.exports = {
   entry: {
     main: './src/main.js',
   },
+  output: {
+    filename: 'toyReact.js'
+  },
+  mode: 'development',
+  optimization: {
+    minimize: false,
+  },
+  devServer: {
+    open: true,
+    compress: false,
+    contentBase: './',
+  },
   module: {
     rules: [
       {
@@ -20,14 +32,5 @@ module.exports = {
         },
       },
     ],
-  },
-  mode: 'development',
-  optimization: {
-    minimize: false,
-  },
-  devServer: {
-    open: true,
-    compress: false,
-    contentBase: './',
   },
 };

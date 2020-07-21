@@ -22,6 +22,9 @@ class TextWrapper {
   }
 }
 
+/**
+ * 组件的父类
+ */
 export class Component {
   constructor() {
     this.children = [];
@@ -38,6 +41,10 @@ export class Component {
   }
 }
 
+/**
+ * 核心函数
+ * 每个JSX都需要经过的
+ */
 export const ToyReact = {
   createElement(type, attributes, ...children) {
     let element;
